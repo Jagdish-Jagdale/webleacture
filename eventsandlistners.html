@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event and Event Listener Example</title>
+</head>
+<body>
+
+    <h1 id="demo1">Event Example</h1>
+    <button onclick="changeText()">
+        Click Me (Event)
+    </button>
+
+    <br><br>
+
+    <h1 id="demo2">Event Listener Example</h1>
+    <button id="btn">
+        Click Me (Event Listener)
+    </button>
+
+    <script>
+
+        // Event Example (onclick)
+        function changeText() {
+
+            document.getElementById("demo1").innerHTML =
+                "Text Changed using onclick Event";
+        }
+        // function changeText() {
+        // alert("Button Clicked for Event Example");
+        // }
+
+
+        // Event Listener Example1 (addEventListener)
+        document.getElementById("btn")
+        .addEventListener("click", function() {
+            
+            document.getElementById("demo2").innerHTML =
+                "Text Changed using Event Listener";
+
+        });
+           // Event Listener Example2 (addEventListener)
+        document.getElementById("btn")
+        .addEventListener("click", function() {
+            
+           alert("Button Clicked");
+
+        });
+
+    </script>
+
+</body>
+</html>

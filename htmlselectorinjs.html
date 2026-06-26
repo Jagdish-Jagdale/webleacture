@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selecting HTML Elements</title>
+</head>
+<body>
+
+    <!-- Element with ID -->
+    <h1 id="heading">Hello World</h1>
+
+    <!-- Elements with Class -->
+    <p class="text">First Paragraph</p>
+    <p class="text">Second Paragraph</p>
+
+    <!-- Elements with Same Tag -->
+    <h2>Heading 1</h2>
+    <h2>Heading 2</h2>
+
+    <!-- Element for querySelector -->
+    <p class="message">This is a message</p>
+
+    <!-- Elements for querySelectorAll -->
+    <li class="fruit">Apple</li>
+    <li class="fruit">Mango</li>
+    <li class="fruit">Orange</li>
+
+    <script>
+
+        // 1. getElementById()
+        let heading =
+        document.getElementById("heading");
+
+        console.log("getElementById:");
+        console.log(heading.innerHTML);
+
+
+
+        // 2. getElementsByClassName()
+        let paragraphs =
+        document.getElementsByClassName("text");
+
+        console.log("getElementsByClassName:");
+        console.log(paragraphs[0].innerHTML);
+        console.log(paragraphs[1].innerHTML);
+
+
+
+        // 3. getElementsByTagName()
+        let h2Tags =
+        document.getElementsByTagName("h2");
+
+        console.log("getElementsByTagName:");
+        console.log(h2Tags[0].innerHTML);
+        console.log(h2Tags[1].innerHTML);
+
+
+
+        // 4. querySelector()
+        let message =
+        document.querySelector(".message");
+
+        console.log("querySelector:");
+        console.log(message.innerHTML);
+
+
+
+        // 5. querySelectorAll()
+        let fruits =
+        document.querySelectorAll(".fruit");
+
+        console.log("querySelectorAll:");
+
+        for(let fruit of fruits){
+            console.log(fruit.innerHTML);
+        }
+
+    </script>
+
+</body>
+</html>

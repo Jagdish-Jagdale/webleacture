@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Methods Example</title>
+</head>
+<body>
+
+    <h1>Open Console (F12) to See Output</h1>
+
+    <script>
+
+        let fruit = ["Apple", "Mango"];
+
+        console.log("Original Array:", fruit);
+
+        // push()
+        let pushArray = [...fruit];
+        pushArray.push("Orange");
+        console.log("After push():", pushArray);
+
+        // pop()
+        let popArray = [...fruit];
+        popArray.pop();
+        console.log("After pop():", popArray);
+
+        // unshift()
+        let unshiftArray = [...fruit];
+        unshiftArray.unshift("Banana","Grapes");
+        console.log("After unshift():", unshiftArray);
+
+        // shift()
+        let shiftArray = [...fruit];
+        shiftArray.shift();
+        console.log("After shift():", shiftArray);
+
+        // indexOf()
+        let index = fruit.indexOf("Mango");
+        console.log("Index of Mango:", index);
+
+        
+
+    </script>
+
+</body>
+</html>
